@@ -250,6 +250,43 @@ header .header-items .header-item .header-avatar .avatar{
 /* პირველი სექცია world news  */
 
 /* მეორე სექცია  trending  */
+.trendingContainer{
+    max-width: 1025px;
+    width: 100%;
+    margin: 0 auto;
+}
+.trendingLeft{
+    width: 6px;
+    height: 10px;
+}
+.trendingRight{
+    width: 6px;
+    height: 10px;
+}
+.trendingArrows{
+    max-width: 52px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.trendingH2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.trendingTop{
+    display: flex;
+    justify-content: space-between;
+}
+.trendingSlider{
+    max-width: 1025px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
 /* მესამე სექცია happening now  */
 
