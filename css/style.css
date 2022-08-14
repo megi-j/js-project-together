@@ -1,6 +1,251 @@
 /* ჰედერი  */
 
+body{
+    font-family: Helvetica;
+}
 
+header{
+    background-color: #F6F8F9;
+    padding: 10px 0;
+    width: 100%;
+    top: 0;
+}
+
+header .header-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .header-items .mobile-navigation{
+    display: none !important;
+}
+
+header .header-items .header-item{
+    display: flex;
+}
+
+header .header-items .header-item .menu-items{
+    display: flex;
+}
+
+header .header-items .header-item .menu-items .menu-item{
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .header-items .header-item .header-logo h1{
+    color: #FA6980;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .header-items .header-item .menu-items .menu-item a{
+    color: rgba(52, 54, 56, .5);
+    transition: 0.3s;
+}
+
+header .header-items .header-item .menu-items .menu-item a:hover{
+    color: #343638;
+}
+
+header .header-items .header-item .menu-items .menu-item-active a{
+    color: #343638;
+}
+
+header .header-items .header-item .header-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+header .header-items .header-item .header-avatar .avatar{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mobile-nav-content{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    height: 100%;
+    display: none;
+}
+
+.mobile-nav-content .content-padding{
+    padding: 40px;
+    position: relative;
+}
+
+.mobile-nav-content .content-relative{
+    position: absolute;
+    height: 100%;
+    background: #F6F8F9;
+    width: 283px;
+    box-shadow: 0px 0px 60px #00000099;
+    z-index: 999999;
+}
+
+.mobile-nav-content .content-padding h1{
+    color: #FA6980;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-nav-content .content-padding .mobile-nav-logo{
+    margin-bottom: 90px;
+}
+
+.mobile-nav-content .content-padding .mobile-items{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.mobile-nav-content .content-padding .mobile-items .mobile-nav-content-item{
+    opacity: .5;
+    transition: 0.3s;
+    text-transform: uppercase;
+    color: #343638;
+    font-weight: bold;
+}
+
+.mobile-nav-content .content-padding .mobile-items .mobile-nav-content-item a{
+    display: flex;
+}
+
+.mobile-nav-content .content-padding .mobile-items .content-avatar a{
+    align-items: center;
+}
+
+
+.mobile-nav-content .content-padding .mobile-items .content-avatar .mobile-profile-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-right: 25px;
+}
+
+.mobile-nav-content .content-padding .mobile-items .content-avatar .mobile-profile-avatar img{
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-nav-content .content-padding .mobile-items .content-item-active{
+    opacity: 1;
+}
+
+.mobile-nav-content .content-padding .mobile-items .mobile-nav-content-item svg{
+    margin-right: 25px;
+}
+
+.mobile-nav-content .content-relative .nav-footer{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .23);
+    width: 100%;
+}
+
+.mobile-nav-content .content-relative .nav-footer .footer-padding{
+    padding: 40px;
+}
+
+.mobile-nav-content .content-relative .nav-footer .footer-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-nav-content .content-relative .nav-footer .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-nav-content .content-relative .nav-footer .footer-item a{
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.mobile-nav-content .content-relative .nav-footer .footer-padding .footer-social{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-nav-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header .header-items .mobile-navigation{
+        display: block !important;
+    }
+
+    header .header-items .header-item .menu-items{
+        display: none !important;
+    }
+
+    header .header-items .header-item .header-avatar{
+        margin-left: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    header .header-items .header-item .header-logo h1{
+        color: #A6ADB4;
+        font-size: 17px;
+    }
+
+    .mobile-nav-content{
+        left: -150%;
+        transition: ease-in-out .3s;
+        display: block;
+    }
+
+    .nav-active{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 287px) {
+
+    .content-relative{
+        width: 100% !important;
+    }
+}
 
 /* პირველი სექცია world news  */
 
