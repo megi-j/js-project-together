@@ -9,6 +9,15 @@ document.querySelector('.mobile-nav-close').addEventListener('click', function()
 });
 
 
+//if header is scrolled down to 830px add class to header
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 150) {
+        document.querySelector('#header').style.position = 'fixed';
+    } else {
+        document.querySelector('#header').style.position = 'relative';
+    }
+});
+
 // პირველი სექცია world news 
 
 
