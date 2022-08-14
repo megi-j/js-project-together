@@ -7,7 +7,86 @@
 /* მეორე სექცია  trending  */
 
 /* მესამე სექცია happening now  */
-
+#section-3 {
+    width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+#section-3 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.S3-left-and-right {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.S3-left {
+    width: 65%;
+    height: 100%;
+}
+.S3-right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    height: 144.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.subtxt {
+    color: gray;
+    font-size: 13px;
+}
+span {
+    border-bottom: 1px solid gray;
+}
+.S3-left div {
+    position: relative;
+    width: 100%;
+}
+.bckgrnd-img {
+    width: 100%;
+}
+.top-txt {
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    color: white;
+    left: 70px;
+}
+.picture-overlay {
+    position: absolute;
+    bottom: 200px;
+    color: white;
+    left: 50px;
+    width: 100%;
+}
+.picture-overlay div h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.picture-overlay div {
+    width: 700px;
+    padding: 20px;
+}
+.timer {
+    display: flex;
+}
+.timer-2 {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
+.timer-2 img {
+    width: 16px;
+    height: 16px;
+}
 
  /* ფუტერი  */
     
