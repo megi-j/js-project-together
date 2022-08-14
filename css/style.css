@@ -81,3 +81,36 @@
     align-items: center;
     margin-bottom: 6rem;
   }
+
+
+  @media screen and (max-width: 870px){
+    footer{
+        display: block;
+        padding-left: 4rem;
+        padding-top: 3rem;
+        height: 316px;
+        position: relative;
+    }
+    .nav-cont{
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 6rem;
+        
+    }
+
+    .link-cont{
+        position: absolute;
+        right: 6rem;
+        bottom: -3rem;
+    }
+
+    .input{
+        position: absolute;
+        left: 2rem;
+        bottom: -0.5rem;
+    }
+
+    #send{
+        left: 14.5rem;
+    }
+  }
