@@ -45,6 +45,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+    position: relative;
+  }
+
+  #send{
+    position: absolute;
+    right: 10px;
+    top: 13px;
   }
 
   .input label{
@@ -54,16 +61,17 @@
   }
 
   #email{
-    background-image: url('../Images/send.png');
+    /* background-image: url('../Images/send.png');
     background-size: 15px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
     padding-right: 30px;
     background-color: transparent;
     border: 1px solid #CBD0D3;
     border-radius: 5px;
     height: 40px;
     width: 262px;
+    color: #CBD0D3;
   }
 
   .link-cont{
